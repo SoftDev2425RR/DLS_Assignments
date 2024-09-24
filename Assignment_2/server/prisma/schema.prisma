@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Ticket {
+  id          String      @id @default(cuid())
+  driverName  String
+  companyName String
+  chemical    String
+  valid       Validation   @default(PENDING)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  job         Job[]
+
+  @@index([id])
+}
+
+model Job {
+  id              String    @id @default(cuid())
+  ticketId        String
+  storageLocation String
+  date            DateTime  @default(now())
+  jobType         JobType
+  jobStatus       JobStatus @default(PENDING)
+  Ticket          Ticket    @relation(fields: [ticketId], references: [id])
+}
+
+enum Validation {
+  ACCEPTED
+  REJECTED
+  PENDING
+}
+
+enum JobType {
+  DELIVERY
+  COLLECTION
+}
+
+enum JobStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+}
