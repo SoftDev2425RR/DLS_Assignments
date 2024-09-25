@@ -42,6 +42,17 @@ The **Chemical Warehouse Project** is designed to manage the storage and auditin
   **When** the job details are submitted,  
   **Then** the system should generate a unique job ID and set the status to “pending”.
 
+## Why Choose 6.1 User Story 1: Ticket Validation
+
+We have chosen to base our work on **User Story 1: Ticket Validation** as it is easy to create GitHub issues, and they can help us build and guide the project step by step. By breaking down tasks into smaller issues, we can:
+
+- **Organize work**: Each issue can represent a specific task or feature, making it easier to track progress and prioritize work.
+- **Collaboration**: Team members can comment, suggest improvements, and assign tasks to the right people, improving collaboration.
+- **Step-by-step progress**: As issues are resolved, we can steadily move the project forward, ensuring each piece is addressed properly.
+- **Documentation**: GitHub issues serve as a record of decisions, challenges, and solutions, helping us stay organized and focused.
+
+By using the user story with GitHub issues, we can make the development process more structured and efficient.
+
 ## Technologies
 
 - NodeJS
@@ -76,6 +87,8 @@ We will use the **GitHub Project Board** to manage and track the progress of tas
 - **User Stories**: High-level descriptions of the functionality that we aim to implement. Each user story will be broken down into smaller tasks.
 - **Tasks**: Specific, actionable steps required to complete each user story.
 
+![image](<Screenshot 2024-09-25 at 21.44.22.jpg>)
+
 ### Using the Project Board
 
 We will use the following procedure to manage issues:
@@ -88,6 +101,12 @@ We will use the following procedure to manage issues:
    - `Bug`: Marks issues for any discovered bugs.
    - `Small`, `Medium`, `Large`: Estimates the size of the task.
    - `Documentation`: Marks issues related to documentation.
+4. **Priority**: Issues will be prioritized based on their importance and urgency via the following labels:
+   - `P0` (Critical Priority)
+   - `P1` (High Priority)
+   - `P2` (Medium Priority)
+
+![image](<Screenshot 2024-09-25 at 20.58.50.jpg>)
 
 ### Workflow and Automation
 
@@ -104,6 +123,10 @@ We will follow the **GitHub Flow** branching strategy:
 - The **main** branch will always contain the most up-to-date deployable code.
 - Developers will create **feature branches** from the main branch to work on individual user stories or tasks.
 - Once a feature or task is complete, a **pull request** will be opened to merge the changes into the main branch.
+
+![image](<Screenshot 2024-09-25 at 21.20.30.jpg>)
+
+![image](<Screenshot 2024-09-25 at 21.46.09.jpg>)
 
 ## Issues and Task Management
 
