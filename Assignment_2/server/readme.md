@@ -42,6 +42,17 @@ The **Chemical Warehouse Project** is designed to manage the storage and auditin
   **When** the job details are submitted,  
   **Then** the system should generate a unique job ID and set the status to “pending”.
 
+## Why Choose 6.1 User Story 1: Ticket Validation
+
+We have chosen to base our work on **User Story 1: Ticket Validation** as it is easy to create GitHub issues, and they can help us build and guide the project step by step. By breaking down tasks into smaller issues, we can:
+
+- **Organize work**: Each issue can represent a specific task or feature, making it easier to track progress and prioritize work.
+- **Collaboration**: Team members can comment, suggest improvements, and assign tasks to the right people, improving collaboration.
+- **Step-by-step progress**: As issues are resolved, we can steadily move the project forward, ensuring each piece is addressed properly.
+- **Documentation**: GitHub issues serve as a record of decisions, challenges, and solutions, helping us stay organized and focused.
+
+By using the user story with GitHub issues, we can make the development process more structured and efficient.
+
 ## Technologies
 
 - NodeJS
@@ -50,6 +61,20 @@ The **Chemical Warehouse Project** is designed to manage the storage and auditin
 - Testing with Jest + Supertest, Artillery for Load Testing
 - Mocking via Jest
 - Static Code Analysis with ESLint [link](https://blog.logrocket.com/linting-typescript-eslint-prettier/)
+
+## Setup
+
+Server setup:
+
+navigate to the server directory and run the following commands:
+
+1. `npm i ` to install the dependencies
+
+2. start docker desktop
+
+3. run `docker-compose up -d` to start the database (make sure that you are in the /server directory)
+
+4. `npm run dev` to start the server
 
 ## Purpose
 
@@ -62,6 +87,8 @@ We will use the **GitHub Project Board** to manage and track the progress of tas
 - **User Stories**: High-level descriptions of the functionality that we aim to implement. Each user story will be broken down into smaller tasks.
 - **Tasks**: Specific, actionable steps required to complete each user story.
 
+![image](<Screenshot 2024-09-25 at 21.44.22.jpg>)
+
 ### Using the Project Board
 
 We will use the following procedure to manage issues:
@@ -72,7 +99,14 @@ We will use the following procedure to manage issues:
    - `User Story`: Marks issues that represent user stories.
    - `Task`: Marks issues that represent individual tasks.
    - `Bug`: Marks issues for any discovered bugs.
-   - `Enhancement`: For improvements beyond the initial scope.
+   - `Small`, `Medium`, `Large`: Estimates the size of the task.
+   - `Documentation`: Marks issues related to documentation.
+4. **Priority**: Issues will be prioritized based on their importance and urgency via the following labels:
+   - `P0` (Critical Priority)
+   - `P1` (High Priority)
+   - `P2` (Medium Priority)
+
+![image](<Screenshot 2024-09-25 at 20.58.50.jpg>)
 
 ### Workflow and Automation
 
@@ -90,6 +124,10 @@ We will follow the **GitHub Flow** branching strategy:
 - Developers will create **feature branches** from the main branch to work on individual user stories or tasks.
 - Once a feature or task is complete, a **pull request** will be opened to merge the changes into the main branch.
 
+![image](<Screenshot 2024-09-25 at 21.20.30.jpg>)
+
+![image](<Screenshot 2024-09-25 at 21.46.09.jpg>)
+
 ## Issues and Task Management
 
 Issues in this project will be used to track:
@@ -98,15 +136,3 @@ Issues in this project will be used to track:
 - **Tasks**: Actionable work items to implement and fulfill user stories.
 - **Bug Fixes**: Any bugs discovered during or after implementation.
 - **Tech Stories**: Technical improvements or refactorings that don't directly add to the product’s functionality.
-
-## User Stories
-
-### 1. Lorry Arrival at the Gate
-
-- A lorry arrives at the gate, and the driver presents a ticket with shipment details.
-- If there is enough capacity in the depot, the shipment is accepted, and a job is created specifying where the chemicals will be stored.
-
-### 2. Auditing Information
-
-- The system provides auditing information regarding the storage and movement of chemicals.
-- It tracks all storage locations and logs the movement of chemicals throughout the depot.
