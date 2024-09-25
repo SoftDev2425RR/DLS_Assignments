@@ -51,6 +51,20 @@ The **Chemical Warehouse Project** is designed to manage the storage and auditin
 - Mocking via Jest
 - Static Code Analysis with ESLint [link](https://blog.logrocket.com/linting-typescript-eslint-prettier/)
 
+## Setup
+
+Server setup:
+
+navigate to the server directory and run the following commands:
+
+1. `npm i ` to install the dependencies
+
+2. start docker desktop
+
+3. run `docker-compose up -d` to start the database (make sure that you are in the /server directory)
+
+4. `npm run dev` to start the server
+
 ## Purpose
 
 This project is developed as part of a GitHub Projects & Issues assignment to manage the project using a Scrum process. Our goal is to implement core functionalities that manage chemical warehouse operations while practicing branching, automation, and team collaboration.
@@ -72,7 +86,8 @@ We will use the following procedure to manage issues:
    - `User Story`: Marks issues that represent user stories.
    - `Task`: Marks issues that represent individual tasks.
    - `Bug`: Marks issues for any discovered bugs.
-   - `Enhancement`: For improvements beyond the initial scope.
+   - `Small`, `Medium`, `Large`: Estimates the size of the task.
+   - `Documentation`: Marks issues related to documentation.
 
 ### Workflow and Automation
 
@@ -98,15 +113,3 @@ Issues in this project will be used to track:
 - **Tasks**: Actionable work items to implement and fulfill user stories.
 - **Bug Fixes**: Any bugs discovered during or after implementation.
 - **Tech Stories**: Technical improvements or refactorings that don't directly add to the product’s functionality.
-
-## User Stories
-
-### 1. Lorry Arrival at the Gate
-
-- A lorry arrives at the gate, and the driver presents a ticket with shipment details.
-- If there is enough capacity in the depot, the shipment is accepted, and a job is created specifying where the chemicals will be stored.
-
-### 2. Auditing Information
-
-- The system provides auditing information regarding the storage and movement of chemicals.
-- It tracks all storage locations and logs the movement of chemicals throughout the depot.
