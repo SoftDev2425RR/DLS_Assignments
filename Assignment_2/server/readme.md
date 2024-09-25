@@ -4,6 +4,44 @@
 
 The **Chemical Warehouse Project** is designed to manage the storage and auditing of chemical shipments. This system tracks shipments arriving at the depot, verifies available capacity, and records where chemicals are stored. Additionally, the system provides auditing capabilities to log and review the movement and storage of chemicals.
 
+## User Stories
+
+### 6.1. User Story 1: Ticket Validation
+
+**As** gate staff,  
+**I want** to validate the ticket presented by the driver,  
+**So that** I can ensure the driver’s details, company name, and chemical shipment details are accurate before creating a job.
+
+**Acceptance Criteria**
+
+- **Given** a driver arrives at the gate with a ticket,  
+  **When** the gate staff enter or scan the ticket details into the system,  
+  **Then** the system should check the driver’s name, company, and chemical shipment details against the ticket.
+
+- **Given** the ticket details are incorrect,  
+  **When** the validation is performed,  
+  **Then** the system should display an error message to the gate staff.
+
+- **Given** the ticket details are correct,  
+  **When** the validation is performed,  
+  **Then** the system should allow the gate staff to proceed with job creation.
+
+### 6.2. User Story 2: Job Creation
+
+**As** gate staff,  
+**I want** to create a job in the system for the delivery or collection of chemicals,  
+**So that** I can track the storage location, date, and type of job (delivery or collection).
+
+**Acceptance Criteria**
+
+- **Given** a validated ticket,  
+  **When** the gate staff create a job,  
+  **Then** the system should allow the creation of a job with the required details: storage location, date, job type (delivery or collection), and status.
+
+- **Given** the job is successfully created,  
+  **When** the job details are submitted,  
+  **Then** the system should generate a unique job ID and set the status to “pending”.
+
 ## Technologies
 
 - NodeJS
