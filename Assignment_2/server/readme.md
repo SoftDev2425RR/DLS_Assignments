@@ -1,4 +1,4 @@
-# Chemical Warehouse Project | Assignment 3
+# Chemical Warehouse Project | Assignment 2
 
 ## Table of Contents
 
