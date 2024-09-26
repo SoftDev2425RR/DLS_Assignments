@@ -1,5 +1,16 @@
 # Chemical Warehouse Project | Assignment 3
 
+## Table of Contents
+
+- [Project Overview](#Project-Overview)
+- [User Stories](#User-Stories)
+- [Technologies](#Technologies)
+- [setup](#Setup)
+- [Purpose](#Purpose)
+- [Project Board and Issue Tracking](#Project-Board-and-Issue-Tracking)
+- [Team Workflow](#Team-Workflow)
+- [Issues and Task Management](#Issues-and-Task-Management)
+
 ## Project Overview
 
 The **Chemical Warehouse Project** is designed to manage the storage and auditing of chemical shipments. This system tracks shipments arriving at the depot, verifies available capacity, and records where chemicals are stored. Additionally, the system provides auditing capabilities to log and review the movement and storage of chemicals.
